@@ -28,7 +28,7 @@
 
     if is-in-dict("acronyms", acros, acr) {
       let defs = acronyms.at(acr)
-      if type(defs) == "string" {
+      if type(defs) == str {
         if plural {
           display("acronyms", acros, acr, defs + "s", link: link)
         } else {
@@ -98,7 +98,7 @@
 }
 
 #let print-acronyms(language, acronym-spacing) = {
-  heading(level: 1, outlined: false, numbering: none)[#ACRONYMS.at(language)]
+  heading(level: 1, outlined: true, numbering: none)[#ACRONYMS.at(language)]
 
   context {
     let acronyms = acros.get()

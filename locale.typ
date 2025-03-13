@@ -24,13 +24,23 @@
 )
 
 #let TITLEPAGE_COMPANY_SUPERVISOR = (
-  "de": "Betreuer im Unternehmen:",
+  "de": "Firmenbetreuer:",
   "en": "Supervisor in the Company:",
 )
 
 #let TITLEPAGE_SUPERVISOR = (
-  "de": "Betreuer an der ",
+  "de": "Wissenschaftliche Betreuerin",
   "en": "Supervisor at ",
+)
+
+#let TITLEPAGE_DEPARTMENT = (
+  "de": "Abteilung:",
+  "en": "Department:",
+)
+
+#let TITLEPAGE_HEAD_OF_STUDY_PROGRAM = (
+  "de": "Studiengangsleitung:",
+  "en": "Head of Study Program:",
 )
 
 #let DECLARATION_OF_AUTHORSHIP_TITLE = (
@@ -38,11 +48,13 @@
   "en": "Declaration of Authorship",
 )
 
-#let DECLARATION_OF_AUTHORSHIP_SECTION_A_SINGLE = "Gemäß Ziffer 1.1.13 der Anlage 1 zu §§ 3, 4 und 5 der Studien- und Prüfungsordnung für die Bachelorstudiengänge im Studienbereich Technik der Dualen Hochschule Baden- Württemberg vom 29.09.2017. Ich versichere hiermit, dass ich meine Arbeit mit dem Thema:"
+// #let DECLARATION_OF_AUTHORSHIP_SECTION_A_SINGLE = "Gemäß Ziffer 1.1.13 der Anlage 1 zu §§ 3, 4 und 5 der Studien- und Prüfungsordnung für die Bachelorstudiengänge im Studienbereich Technik der Dualen Hochschule Baden- Württemberg vom 29.09.2017. Ich versichere hiermit, dass ich meine Arbeit mit dem Thema:"
+#let DECLARATION_OF_AUTHORSHIP_SECTION_A_SINGLE = "Ich versichere hiermit, dass ich die vorliegende Arbeit mit dem Titel:"
 
 #let DECLARATION_OF_AUTHORSHIP_SECTION_A_PLURAL = "Gemäß Ziffer 1.1.13 der Anlage 1 zu §§ 3, 4 und 5 der Studien- und Prüfungsordnung für die Bachelorstudiengänge im Studienbereich Technik der Dualen Hochschule Baden- Württemberg vom 29.09.2017. Wir versichern hiermit, dass wir unsere Arbeit mit dem Thema:"
 
-#let DECLARATION_OF_AUTHORSHIP_SECTION_B_SINGLE = "selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. Ich versichere zudem, dass alle eingereichten Fassungen übereinstimmen."
+// #let DECLARATION_OF_AUTHORSHIP_SECTION_B_SINGLE = "selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. Ich versichere zudem, dass alle eingereichten Fassungen übereinstimmen."
+#let DECLARATION_OF_AUTHORSHIP_SECTION_B_SINGLE = "selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. Ich versichere zudem, dass die eingereichte elektronische Fassung mit der gedruckten Fassung übereinstimmt."
 
 #let DECLARATION_OF_AUTHORSHIP_SECTION_B_PLURAL = "selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt haben. Wir versichern zudem, dass alle eingereichten Fassungen übereinstimmen."
 
@@ -118,7 +130,7 @@ The content of this thesis may not be made available, either in its entirety or 
 )
 
 #let CODE_SNIPPETS = (
-  "de": "Codeverzeichnis",
+  "de": "Quelltextverzeichnis",
   "en": "Code Snippets",
 )
 

@@ -21,6 +21,8 @@
   show-confidentiality-statement,
   confidentiality-marker,
   university-short,
+  department,  
+  head_of_study_program,
 ) = {
   if (many-authors) {
     v(-1.5em)
@@ -221,6 +223,7 @@
     if (not at-university) {
       text(weight: "semibold", TITLEPAGE_COMPANY.at(language))
     },
+
     if (not at-university) {
       stack(
         dir: ttb,
@@ -273,6 +276,22 @@
       )
     },
 
+    // department 
+    if (department != none) {
+      text(weight: "semibold", TITLEPAGE_DEPARTMENT.at(language))
+    },
+    if (department != none) {
+      text(department)
+    },
+
+    // HEAD_OF_STUDY_PROGRAM
+    if (TITLEPAGE_HEAD_OF_STUDY_PROGRAM != none) {
+      text(weight: "semibold", TITLEPAGE_HEAD_OF_STUDY_PROGRAM.at(language))
+    },
+    if (TITLEPAGE_HEAD_OF_STUDY_PROGRAM != none) {
+      text(head_of_study_program)
+    },
+
     // company supervisor
     if ("company" in supervisor) {
       text(weight: "semibold", TITLEPAGE_COMPANY_SUPERVISOR.at(language))
@@ -286,7 +305,7 @@
       text(
         weight: "semibold",
         TITLEPAGE_SUPERVISOR.at(language) +
-        university-short +
+        // university-short +
         [:]
       )
     },

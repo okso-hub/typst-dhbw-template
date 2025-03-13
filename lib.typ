@@ -1,4 +1,4 @@
-#import "@preview/codelst:2.0.1": *
+#import "@preview/codelst:2.0.2": *
 #import "acronym-lib.typ": init-acronyms, print-acronyms, acr, acrpl, acrs, acrspl, acrl, acrlpl, acrf, acrfpl
 #import "glossary-lib.typ": init-glossary, print-glossary, gls
 #import "locale.typ": TABLE_OF_CONTENTS, LIST_OF_FIGURES, LIST_OF_TABLES, CODE_SNIPPETS, APPENDIX, REFERENCES
@@ -68,6 +68,8 @@
   university: none,
   university-location: none,
   university-short: none,
+  department: none,
+  head_of_study_program: none,
   city: none,
   supervisor: (:),
   date: none,
@@ -205,6 +207,8 @@
       show-confidentiality-statement,
       confidentiality-marker,
       university-short,
+      department,
+      head_of_study_program,
     )
   }
 
@@ -395,8 +399,9 @@
     let count = elems.len()
 
     if (show-list-of-figures and count > 0) {
+      heading(level: 1, numbering: none, outlined: true)[#LIST_OF_FIGURES.at(language)]
       outline(
-        title: LIST_OF_FIGURES.at(language),
+        title: none,
         target: figure.where(kind: image),
       )
     }
@@ -407,8 +412,9 @@
     let count = elems.len()
 
     if (show-list-of-tables and count > 0) {
+      heading(level: 1, numbering: none, outlined: true)[#LIST_OF_TABLES.at(language)]
       outline(
-        title: LIST_OF_TABLES.at(language),
+        title: none,
         target: figure.where(kind: table),
       )
     }
@@ -419,8 +425,9 @@
     let count = elems.len()
 
     if (show-code-snippets and count > 0) {
+      heading(level: 1, numbering: none, outlined: true)[#CODE_SNIPPETS.at(language)]
       outline(
-        title: CODE_SNIPPETS.at(language),
+        title: none,
         target: figure.where(kind: raw),
       )
     }

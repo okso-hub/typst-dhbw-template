@@ -7,11 +7,6 @@ You can see an example PDF of how the template looks [here](https://github.com/D
 To see an example of how you can use this template, check out the `main.typ` file.
 More examples can be found in the [examples directory](https://github.com/DannySeidel/typst-dhbw-template/blob/main/examples) of the GitHub repository.
 
-## Contributing
-
-If you want to contribute to this template, please open a issue describing the problem or the feature you want to add.
-If you create a pull request I still have to create a new PR with the changes in the Typst repository, so it is better to open an issue first.
-
 ## Usage
 
 You can use this template in the Typst web app by clicking "Start from template" on the dashboard and searching for `supercharged-dhbw`.
