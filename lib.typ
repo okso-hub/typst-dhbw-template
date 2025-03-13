@@ -70,6 +70,8 @@
   university-short: none,
   department: none,
   head_of_study_program: none,
+  completion_period: (none, none),
+  completion_period_format: "[day].[month].[year]",
   city: none,
   supervisor: (:),
   date: none,
@@ -209,6 +211,8 @@
       university-short,
       department,
       head_of_study_program,
+      completion_period,
+      completion_period_format,
     )
   }
 

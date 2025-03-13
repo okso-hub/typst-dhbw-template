@@ -43,6 +43,11 @@
   "en": "Head of Study Program:",
 )
 
+#let TITLEPAGE_COMPLETION_PERIOD = (
+  "de": "Bearbeitungszeitraum:",
+  "en": "Completion period:",
+)
+
 #let DECLARATION_OF_AUTHORSHIP_TITLE = (
   "de": "Selbstständigkeitserklärung",
   "en": "Declaration of Authorship",

@@ -23,6 +23,8 @@
   university-short,
   department,  
   head_of_study_program,
+  completion_period,
+  completion_period_format,
 ) = {
   if (many-authors) {
     v(-1.5em)
@@ -188,19 +190,6 @@
     v(2em)
   }
 
-  // date
-  align(
-    center,
-    text(
-      1.2em,
-      if (type(date) == datetime) {
-        date.display(date-format)
-      } else {
-        date.at(0).display(date-format) + [ -- ] + date.at(1).display(date-format)
-      },
-    ),
-  )
-
   v(1fr)
 
   // author information
@@ -285,10 +274,10 @@
     },
 
     // HEAD_OF_STUDY_PROGRAM
-    if (TITLEPAGE_HEAD_OF_STUDY_PROGRAM != none) {
+    if (head_of_study_program != none) {
       text(weight: "semibold", TITLEPAGE_HEAD_OF_STUDY_PROGRAM.at(language))
     },
-    if (TITLEPAGE_HEAD_OF_STUDY_PROGRAM != none) {
+    if (head_of_study_program != none) {
       text(head_of_study_program)
     },
 
@@ -311,6 +300,16 @@
     },
     if ("university" in supervisor and type(supervisor.university) == str) {
       text(supervisor.university)
-    }
+    },
+
+    // completion period
+    if (completion_period != none) {
+      text(weight: "semibold", TITLEPAGE_COMPLETION_PERIOD.at(language))
+    },
+    if (completion_period != none) {
+      completion_period.at(0).display(completion_period_format) + [ - ] + completion_period.at(1).display(completion_period_format)
+    },
+
+
   )
 }
