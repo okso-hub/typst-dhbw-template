@@ -72,6 +72,8 @@
   head_of_study_program: none,
   completion_period: (none, none),
   completion_period_format: "[day].[month].[year]",
+  submission_date: none,
+  submission_date_format: "[day].[month].[year]",
   city: none,
   supervisor: (:),
   date: none,
@@ -213,6 +215,8 @@
       head_of_study_program,
       completion_period,
       completion_period_format,
+      submission_date,
+      submission_date_format,
     )
   }
 

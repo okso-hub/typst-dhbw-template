@@ -48,6 +48,11 @@
   "en": "Completion period:",
 )
 
+#let TITLEPAGE_SUBMISSION_DATE = (
+  "de": "Abgabedatum:",
+  "en": "Submission date:",
+)
+
 #let DECLARATION_OF_AUTHORSHIP_TITLE = (
   "de": "Selbstständigkeitserklärung",
   "en": "Declaration of Authorship",

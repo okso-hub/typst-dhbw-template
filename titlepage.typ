@@ -25,6 +25,8 @@
   head_of_study_program,
   completion_period,
   completion_period_format,
+  submission_date,
+  submission_date_format,
 ) = {
   if (many-authors) {
     v(-1.5em)
@@ -307,9 +309,16 @@
       text(weight: "semibold", TITLEPAGE_COMPLETION_PERIOD.at(language))
     },
     if (completion_period != none) {
-      completion_period.at(0).display(completion_period_format) + [ - ] + completion_period.at(1).display(completion_period_format)
+      completion_period.at(0).display(completion_period_format) + [ \– ] + completion_period.at(1).display(completion_period_format)
     },
 
+    // submission date
+    if (completion_period != none) {
+      text(weight: "semibold", TITLEPAGE_SUBMISSION_DATE.at(language))
+    },
+    if (completion_period != none) {
+      submission_date.display(submission_date_format)
+    },
 
   )
 }
